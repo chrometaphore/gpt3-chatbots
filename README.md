@@ -14,9 +14,9 @@ Evergreen (UI Framework)
 2. Open .env.local, add `OPENAI_API_KEY='your own api key'`
 3. run `yarn` to install dependencies
 4. Standard Next.js commands are now available.
-`yarn dev` - Runs next dev which starts Next.js in development mode
-`yarn build` - Runs next build which builds the application for production usage
-`yarn start` - Runs next start which starts a Next.js production server
+* `yarn dev` - Runs next dev which starts Next.js in development mode
+* `yarn build` - Runs next build which builds the application for production usage
+* `yarn start` - Runs next start which starts a Next.js production server
 5. Open http://localhost:3000/
 
 # GPT3 Templates Setup
