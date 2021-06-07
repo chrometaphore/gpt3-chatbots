@@ -1,0 +1,95 @@
+//main wrapper
+.main {
+  width:100%;
+  min-height:100vh;
+  border:none !important;
+  padding:72px 8px 88px 8px;
+}
+
+//top bar
+.navBar {
+  position:fixed !important;
+  top:0;
+  left:0;
+  height:64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  z-index:1;
+  border-bottom:solid 1px rgba(0,0,0,.08);
+  position: relative;
+}
+.navBar .menu {
+  position: absolute;
+  left:16px;
+}
+
+//menu prompts listing
+.menuItem {
+  height:auto !important;
+  display: flex;
+  flex-direction: column;
+  padding-top:16px;
+  padding-bottom:16px;
+}
+
+//bottom bar
+.chatBar {
+  position: fixed;
+  bottom:0;
+  left:0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  z-index:1;
+  border-top:solid 1px rgba(0,0,0,.08);
+  width:100%;
+  padding:24px;
+}
+
+//chat message
+.message {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin:8px;
+}
+.message.me {
+  flex-direction:row-reverse;
+}
+.message.ai {}
+.message span {
+  font-size: 14px;
+}
+.message.ai span {
+  color:white;
+  padding:2px;
+}
+.message.me .avatar {
+  margin-left: 8px;
+}
+.message.ai .avatar {
+  margin-right: 8px;
+}
+
+//this depends on the formatting of AI output..
+.message hr {
+  border:solid 1px rgba(255,255,255,.2);
+  margin-block:16px;
+}
+.message ul {
+  margin:16px 0 0 0;
+  padding-inline-start:20px;
+}
+.message li {
+  margin:8px 0 0 0;
+  list-style:initial;
+}
+.message p {
+  margin-block:0;
+}
+.message em {
+  opacity:0.65;
+}

@@ -1,0 +1,36 @@
+{
+  "templates":[
+    {
+      "name": "translate + interesting facts",
+      "context": "This is a conversation with an AI translator. The AI translates Japanese words and phrases, and also provides kanji details and interesting cultural facts related to the translated phrase.\n\n",
+      "examples": "ja:東京は日本の首都です。\nen:<strong>Tokyo is the capital of Japan.</strong>\n<hr />\n<p>Did you know?</p>\n<ul>\n<li><p>日本 [にほん,nihon] - Japan</p><em>Japan spans an archipelago of 6852 islands covering 377,975 square kilometers.</em></li>\n<li><p>首都 [しゅと,shuto] - capital city</p><em>The word capital derives from the Latin caput (genitive capitis), meaning 'head'.</em></li>\n</ul>\n\nja:私は次の週末に映画に行きたいです。\nen:<strong>I would like to go to the movies next weekend.</strong>\n<hr />\n<p>Did you know?</p>\n<ul>\n<li><p>映画 [えいが,eiga] - movie</p><em>The name \"film\" originates from the fact that photographic film (also called film stock) has historically been the medium for recording and displaying motion pictures.</em></li>\n</ul>\n\nja:中国は長い歴史を持っています。\nen:<strong>China has a long history.</strong>\n<hr />\n<p>Did you know?</p>\n<ul>\n<li><p>中国 [ちゅうごく,chuugoku] - China</p><em>With approximately 1.4 billion people, China is the world's most populous country.</em></li>\n</ul>\n\n",
+      "user_input_prepend":"ja:",
+      "ai_prompt_prepend":"en:",
+      "settings": {
+        "stop": "ja:",
+        "engine": "davinci",
+        "temperature": 0.7,
+        "topP": 1,
+        "frequencyPenalty": 0,
+        "presencePenalty": 0,
+        "maxTokens": 200
+      }
+    },
+    {
+      "name": "translate + dictionary",
+      "context": "This is a conversation with an AI translator. The AI translates Japanese words and phrases, and provides related examples and synonyms to teach Japanese.\n\n",
+      "examples": "ja:東京\nen:<strong> [とうきょう, Tokyo] - Tokyo</strong>\n<hr />\n<p>Examples</p>\n<ul>\n<li><p>東京は日本の首都です [Tokyo wa Nihon no shuto desu]</p><em>Tokyo is the capital of Japan</em></li>\n<li><p>あなたは東京タワーを訪れましたか [Anata wa Tokyo tawā o otozuremashita ka]</p><em>Did you visit the Tokyo Tower?</em></li>\n</ul>\n\n\nja:映画\nen:<strong> [えいが, eiga] - Movies</strong>\n<hr />\n<p>Examples</p>\n<ul>\n<li><p>また映画が見たいです [Mata eiga ga mitai desu]</p><em>I want to see the movie again.</em></li>\n<li><p>あなたの好きな映画は何ですか？ [Anata no sukina eiga wa nani desu ka?]</p><em>What is your favourite movie?</em></li>\n</ul>\n\n",
+      "user_input_prepend":"ja:",
+      "ai_prompt_prepend":"en:",
+      "settings": {
+        "stop": "ja:",
+        "engine": "davinci",
+        "temperature": 0.7,
+        "topP": 1,
+        "frequencyPenalty": 0,
+        "presencePenalty": 0,
+        "maxTokens": 260
+      }
+    }
+  ]
+}
