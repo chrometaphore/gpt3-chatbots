@@ -3,6 +3,8 @@
 A super-basic Next.js boilerplate meant to provide a simple UI playground to start experimenting with GPT-3 by openAI.
 *Note - To use GPT-3, You'll need an openAI API token. If you don't have one, You can join the waitlist here: https://beta.openai.com/*
 
+https://vimeo.com/559994420
+
 ## Stack
 
 Next.js (Client + Server React Framework)
