@@ -26,20 +26,21 @@ To learn more about how to compose prompts, this is a good place to start:
 https://beta.openai.com/docs/introduction/prompt-design-101
 
 A template has the following structure:
-`"templates":[
-  {
-    "name": "name of the template",
-    "context": "this is the initial task description.",
-    "examples": "Here you can provide few examples of the task",
-    "user_input_prepend":"if you need to prepend a string before the user input, add it here",
-    "ai_prompt_prepend":"if you need to prepend a string before the AI output, add it here",
-    "settings": {
-      "stop": "up to 4 words, API will stop when encountering any of these",
-      "engine": "davinci",
-      "temperature": 0.7,
-      "topP": 1,
-      "frequencyPenalty": 0,
-      "presencePenalty": 0,
-      "maxTokens": 64
-    }
-  },`
+```json
+{
+  "name": "name of the template",
+  "context": "this is the initial task description.",
+  "examples": "Here you can provide few examples of the task",
+  "user_input_prepend":"if you need to prepend a string before the user input, add it here",
+  "ai_prompt_prepend":"if you need to prepend a string before the AI output, add it here",
+  "settings": {
+    "stop": "up to 4 words, API will stop when encountering any of these",
+    "engine": "davinci",
+    "temperature": 0.7,
+    "topP": 1,
+    "frequencyPenalty": 0,
+    "presencePenalty": 0,
+    "maxTokens": 64
+  }
+}
+```
